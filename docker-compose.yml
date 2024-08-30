@@ -25,7 +25,9 @@ services:
     environment:
       - JAEGER_AGENT_HOST=jaeger
       - DASHBOARD_URL=http://pg8goo4ocgwokgkoocgsko0o.188.34.164.93.sslip.io/
-      - ALLOWED_HOSTS=localhost,api,*
+      - ALLOWED_HOSTS=localhost,api,lko4ogc4koo4wc80c4swkksc.188.34.164.93.sslip.io,pg8goo4ocgwokgkoocgsko0o.188.34.164.93.sslip.io,*
+      - ALLOWED_CLIENT_HOSTS=pg8goo4ocgwokgkoocgsko0o.188.34.164.93.sslip.io,lko4ogc4koo4wc80c4swkksc.188.34.164.93.sslip.io
+
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:latest
